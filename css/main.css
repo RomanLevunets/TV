@@ -606,12 +606,12 @@ input[type=checkbox] {
   .rates-bottom {
     padding: 25px 0 10px; }
   .rates-list {
-    width: 55%;
+    width: 63%;
     font: 100% "OpenSans", sans-serif;
     font-size: 13px; }
     .rates-list li {
       display: inline-block;
-      width: 49%;
+      width: 48%;
       margin-bottom: 15px;
       position: relative;
       padding-left: 30px; }
