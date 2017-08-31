@@ -326,9 +326,6 @@ input[type=checkbox] {
     vertical-align: middle;
     margin-right: 10px; }
 
-.block-scroll {
-  overflow-x: scroll; }
-
 .form-second {
   line-height: 1; }
   .form-second::before {
@@ -464,9 +461,7 @@ input[type=checkbox] {
 
 .rates {
   padding-left: 5px;
-  position: relative;
-  overflow-x: auto;
-  width: 880px; }
+  position: relative; }
   .rates-tab {
     font: 100% "OpenSans-Bold", sans-serif;
     margin-top: 30px;
@@ -968,6 +963,10 @@ input[type=checkbox] {
   margin-top: 3px; }
 
 @media (max-width: 1000px) {
+  .block-scroll {
+    overflow-x: scroll; }
+  .rates {
+    width: 870px; }
   .container-bottom {
     max-width: 768px; }
   .container {
