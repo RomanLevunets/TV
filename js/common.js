@@ -26,6 +26,9 @@ $(document).ready(function() {
         }
     });
 
+    $('.form-selection label').click(function () {
+        $(this).parents('.select').toggleClass('checked');
+    });
 
 
 });
