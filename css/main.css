@@ -1244,6 +1244,12 @@ nav {
 @media (max-width: 767px) {
   .container-bottom {
     max-width: 425px; }
+  .service-check {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .service-check.fourplay:nth-child(2) {
+    margin-left: 0; }
   .container {
     max-width: 425px; }
   .header-Tblock {
@@ -1257,6 +1263,10 @@ nav {
     padding: 12px 4px; }
   .header-Tblock-private, .header-Tblock-pay, .header-Tblock-pay {
     font-size: 11px; }
+  .service-check.fourplay:first-child {
+    width: 100%; }
+  .service-check.fourplay:nth-child(2) {
+    width: 100%; }
   .header-Tblock-help {
     font-size: 11px; }
   .header-Tblock-help::before {
