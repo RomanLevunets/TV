@@ -1038,6 +1038,11 @@ input[type=checkbox] {
 @media (max-width: 1000px) {
   .block-scroll {
     overflow-x: scroll; }
+  .form-one, .form-second {
+    height: 60px;
+    padding: 14px 15px !important; }
+  .form-second {
+    padding: 12px !important; }
   .rates {
     width: 870px; }
   .container-bottom {
