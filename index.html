@@ -68,15 +68,31 @@
         <div class="container">
             <h2>Что бы вы хотели подключить?</h2>
             <span class="container-sub">Вы можете выбрать несколько услуг</span>
-            <form action="/" class="form-selection">
-                <div class="form-one select ">
-                    <input type="checkbox" name="ethernet" id="ethernet">
-                    <label for="ethernet">Интернет</label>
-                </div>
-                <div class="form-second select ">
-                    <input type="checkbox" name="tv" id="tv">
-                    <label for="tv">Телевидение</label>
-                </div>
+            <form id="connect_form" method=get action="/" >
+                <section class="line_small services-checklist">
+                    <label class="service-check fourplay ">
+                        <span class="service-check-ico" style="background-image: url('/img/service-1.png');"></span>
+                        <span class="service-check-ico service-check-ico__checked" style="background-image: url('/img/service-1-checked.png');"></span>
+                        <input type="checkbox"  name="internet">
+                        <span class="fake-checkbox"></span>
+                        <span class="service-check-text">
+							<span class="service-check-container"><span class="service-check-cont">
+								<span class="service-check-title">Интернет</span>
+							</span></span>
+						</span>
+                    </label>
+                    <label class="service-check fourplay">
+                        <span class="service-check-ico" style="background-image: url('/img/service-2.png');"></span>
+                        <span class="service-check-ico service-check-ico__checked" style="background-image: url('/img/service-2-checked.png');"></span>
+                        <input type="checkbox"  name="tv">
+                        <span class="fake-checkbox"></span>
+                        <span class="service-check-text">
+							<span class="service-check-container"><span class="service-check-cont">
+								<span class="service-check-title">Телевидение</span>
+							</span></span>
+						</span>
+                    </label>
+                </section>
             </form>
             <div class="adress">
                 <p>Проверьте ваш адрес в <a href="#">г. Севастополь</a></p>

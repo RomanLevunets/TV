@@ -303,112 +303,213 @@ nav {
     margin-top: 5px;
     margin-bottom: 65px; }
 
-.form-selection {
-  margin-bottom: 50px;
-  position: relative;
-  font-size: 0; }
+.service-check.fourplay:first-child {
+  width: 205px; }
 
-input[type=checkbox] {
-  display: none; }
+.service-check.fourplay:first-child > .service-check-ico, .service-check.fourplay:first-child > .service-check-ico.service-check-ico__checked {
+  width: 50px; }
 
-.form-one, .form-second {
-  display: inline-block;
-  height: 66px;
-  margin-right: 10px;
-  font: 100% "OpenSans", sans-serif;
-  font-size: 18px;
-  padding: 17px 15px;
-  color: #000;
-  background: #F7F8F8;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  border: 1px solid #CDCECE;
-  -webkit-transition: background .2s linear;
-  -o-transition: background .2s linear;
-  transition: background .2s linear;
-  position: relative; }
-  .form-one.checked, .checked.form-second {
-    color: #fff; }
-    .form-one.checked::after, .checked.form-second::after {
-      width: 100%;
-      border-color: transparent; }
-    .form-one.checked::before, .checked.form-second::before {
-      background-image: url("../img/service-1-checked.png"); }
-  .form-one::after, .form-second::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    -webkit-transition: width .1s linear;
-    -o-transition: width .1s linear;
-    transition: width .1s linear;
-    background: -webkit-gradient(linear, left top, left bottom, from(#576869), to(#3e4b4c));
-    background: -webkit-linear-gradient(top, #576869 0%, #3e4b4c 100%);
-    background: -o-linear-gradient(top, #576869 0%, #3e4b4c 100%);
-    background: linear-gradient(to bottom, #576869 0%, #3e4b4c 100%);
-    -webkit-border-radius: 3px;
-            border-radius: 3px; }
-  .form-one:hover, .form-second:hover {
-    background: #EFF0F0; }
-  .form-one::before, .form-second::before {
-    content: " ";
-    display: inline-block;
-    width: 32px;
-    height: 28px;
-    background-image: url("../img/service-1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    vertical-align: middle;
-    margin-right: 10px;
-    position: relative;
-    z-index: 2; }
+.service-check.fourplay:first-child > .service-check-text {
+  left: 65px; }
 
-.form-second {
-  padding: 15px;
-  line-height: 1; }
-  .form-second.checked {
-    color: #fff; }
-    .form-second.checked::after {
-      width: 100%;
-      border-color: transparent; }
-    .form-second.checked::before {
-      background-image: url("../img/service-2-checked.png"); }
-  .form-second::before {
-    height: 32px;
-    width: 32px;
-    background-image: url("../img/service-2.png"); }
+.service-check.fourplay:nth-child(2) {
+  width: 230px; }
 
-.form-selection label {
+.service-check.fourplay:nth-child(2) > .service-check-ico, .service-check.fourplay:nth-child(2) > .service-check-ico.service-check-ico__checked {
+  width: 50px;
+  margin-top: -4px; }
+
+.service-check.fourplay:nth-child(2) > .service-check-text {
+  left: 65px; }
+
+.service-check.fourplay .service-check-title {
+  font-size: 17px; }
+
+.checked .service-check-cont > span {
+  color: white; }
+
+.services-checklist {
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.service-check {
+  width: 294px;
+  height: 76px;
+  -webkit-border-radius: 3px 3px 0 0;
+          border-radius: 3px 3px 0 0;
+  background: #f7f8f8;
+  border: 1px solid #e7eaea;
+  display: block;
+  float: left;
+  margin: 0 0 0 9px;
   cursor: pointer;
   position: relative;
-  vertical-align: middle;
-  z-index: 2; }
-  .form-selection label::after {
-    content: " ";
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    border: 2px solid #b6c4ca;
-    margin-left: 10px;
-    z-index: 10;
-    background-image: url("../img/checkbox-done.png");
-    background-repeat: no-repeat;
-    background-position: 0 -20px;
-    -webkit-transition: background-position .1s linear, border-color .1s linear;
-    -o-transition: background-position .1s linear, border-color .1s linear;
-    transition: background-position .1s linear, border-color .1s linear; }
+  font: 100% "OpenSans", sans-serif; }
 
-.form-selection input:checked .form-one::after, .form-selection input:checked .form-second::after {
-  width: 100%; }
+.service-check::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-border-radius: 3px 3px 0 0;
+          border-radius: 3px 3px 0 0;
+  background: #eff4f4;
+  -webkit-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out; }
 
-.form-selection input:checked + label::after {
-  background-position: center;
-  border-color: #4acc08; }
+.service-check:hover::before {
+  opacity: 1; }
+
+.service-check-link {
+  float: left;
+  font-size: 16px;
+  margin: 30px 0 0 40px; }
+
+.service-check.checked {
+  border-color: transparent;
+  background: #40494a;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6c7979), to(#40494a));
+  background: -webkit-linear-gradient(top, #6c7979 0, #40494a 100%);
+  background: -o-linear-gradient(top, #6c7979 0, #40494a 100%);
+  background: linear-gradient(to bottom, #6c7979 0, #40494a 100%);
+  border: none; }
+
+.service-check.checked::before {
+  background: #495454; }
+
+.service-check:first-child {
+  margin-left: 0; }
+
+.service-check input {
+  display: none; }
+
+.service-check-container {
+  display: table;
+  height: 75px; }
+
+.service-check-cont {
+  display: table-cell;
+  height: 75px;
+  vertical-align: middle; }
+
+.service-check-text {
+  position: absolute;
+  top: 0;
+  left: 65px; }
+
+.checked .service-check-text {
+  position: absolute;
+  top: 1px;
+  left: 66px; }
+
+.service-check:nth-child(1) .service-check-text {
+  left: 79px; }
+
+.service-check:nth-child(2) .service-check-text {
+  left: 76px; }
+
+.service-check-title {
+  display: block;
+  font-size: 18px;
+  color: #000; }
+
+.service-check-description {
+  font-size: 12px;
+  color: #616970;
+  display: block;
+  margin-top: 1px; }
+
+.checked .service-check-title,
+.checked .service-check-description {
+  color: #fff; }
+
+.service-check .fake-checkbox {
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  margin-top: -13px; }
+
+.service-check-ico {
+  width: 62px;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: right center; }
+
+.service-check:nth-child(2) .service-check-ico {
+  width: 59px; }
+
+.service-check:nth-child(3) .service-check-ico {
+  width: 49px; }
+
+.service-check-ico__checked,
+.checked .service-check-ico,
+.disabled .service-check-ico,
+.service-check-ico__disabled {
+  display: none; }
+
+.checked .service-check-ico__checked,
+.disabled .service-check-ico__disabled {
+  display: block; }
+
+.service-check.disabled {
+  background: #f7f8f8;
+  cursor: default; }
+
+.service-check.disabled::before {
+  opacity: 0; }
+
+.service-check.disabled .service-check-title,
+.service-check.disabled .service-check-description {
+  color: #97a2a7; }
+
+.fake-checkbox {
+  width: 26px;
+  height: 26px;
+  background: url("../img/checkbox-done.png") no-repeat;
+  display: inline-block;
+  background-position: -26px 0;
+  border: 2px solid #B6C4CA; }
+
+.checked .fake-checkbox,
+.fake-checkbox.checked {
+  background-image: url("../img/checkbox-done.png"); }
+
+.service-check.fourplay.noactive, .service-check.fourplay.noactive:hover {
+  opacity: 0.2;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); }
+
+.line_small.services-checklist.acts {
+  border-bottom: 0px; }
+
+.line_small.services-checklist.acts .service-check {
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin-bottom: 0px; }
+
+.line_small.services-checklist.acts .service-check:before {
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
+
+.service-check.checked {
+  border-color: transparent;
+  background: #40494a;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6c7979), to(#40494a));
+  background: -webkit-linear-gradient(top, #6c7979 0, #40494a 100%);
+  background: -o-linear-gradient(top, #6c7979 0, #40494a 100%);
+  background: linear-gradient(to bottom, #6c7979 0, #40494a 100%);
+  border: none; }
+  .service-check.checked .fake-checkbox {
+    border-color: #94d248;
+    background-position: center; }
 
 .adress p {
   font-size: 24px;
@@ -1038,7 +1139,7 @@ input[type=checkbox] {
 @media (max-width: 1000px) {
   .block-scroll {
     overflow-x: scroll; }
-  .form-one, .form-second {
+  .form-one {
     height: 60px;
     padding: 14px 15px !important; }
   .form-second {
@@ -1085,7 +1186,7 @@ input[type=checkbox] {
     font-size: 30px; }
   .container-sub {
     font-size: 16px; }
-  .form-one, .form-second, .form-second {
+  .form-one, .form-second {
     font-size: 15px;
     padding: 10px; }
   .adress p {
